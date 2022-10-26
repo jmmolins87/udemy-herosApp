@@ -12,6 +12,7 @@ import { SearchComponent } from './pages/search/search.component';
 const routes: Routes = [
   {
     path: '',
+    component: HomeComponent,
     children: [
       {
         path: 'home',
