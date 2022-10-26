@@ -4,6 +4,9 @@ import { CommonModule } from '@angular/common';
 // ** Custom **
 // ** Modules **
 import { HerosRoutingModule } from './heros-routing.module';
+import { FlexLayoutModule } from "@angular/flex-layout";
+import { MaterialModule } from '../material/material.module';
+
 // ** Components **
 import { AddComponent } from './pages/add/add.component';
 import { SearchComponent } from './pages/search/search.component';
@@ -23,7 +26,9 @@ import { ListComponent } from './pages/list/list.component';
   ],
   imports: [
     CommonModule,
-    HerosRoutingModule
+    HerosRoutingModule,
+    FlexLayoutModule,
+    MaterialModule
   ]
 })
 export class HerosModule { }

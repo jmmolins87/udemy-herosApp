@@ -2,3 +2,17 @@
 
 html, body { height: 100%; }
 body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+
+
+
+/* *** Utilities *** */
+.ml-menu-word {
+    margin-left: 20px !important;
+}
+.c-pointer {
+    cursor: pointer !important;
+}
+.spacer {
+    flex: 1 1 auto;
+}
