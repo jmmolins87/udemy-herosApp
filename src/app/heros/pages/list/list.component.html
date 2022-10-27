@@ -1,1 +1,16 @@
-<p>list works!</p>
+<h1>Listado de Héroes</h1>
+<mat-divider></mat-divider>
+
+<div 
+    fxLayout="row wrap" 
+    fxLayoutAlign="space-between">
+    <div    
+        *ngFor="let hero of heros" 
+        fxFlex.xs="100"
+        fxFlex.sm="49"
+        fxFlex.md="32"
+        fxFlex.lg="19"
+        fxFlex.xl="15">
+        <app-card-hero [hero]="hero"></app-card-hero>
+    </div>
+</div>

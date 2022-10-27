@@ -23,7 +23,7 @@ const routes: Routes = [
         component: AddComponent
       },
       {
-        path: ':id',
+        path: ':/id',
         component: HeroComponent
       },
       {
