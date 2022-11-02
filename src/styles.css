@@ -8,6 +8,9 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
 .mt-20 {
     margin-top: 20px !important;
 }
+.mb-50 {
+    margin-bottom: 50px !important;
+}
 .ml-menu-word {
     margin-left: 20px !important;
 }
@@ -16,4 +19,20 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
 }
 .spacer {
     flex: 1 1 auto;
+}
+.w-100 {
+    width: 100% !important;
+}
+.br-5 {
+    border-radius: 5px !important;
+}
+
+
+/* ** Material ** */
+.mat-list-base .mat-list-item .mat-list-item-content {
+    align-items: flex-start !important;
+    padding: 0 !important;
+}
+.mat-list-base .mat-list-item .mat-list-item-content span {
+    margin-right: 10px;
 }

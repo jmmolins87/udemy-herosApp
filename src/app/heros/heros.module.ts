@@ -3,6 +3,7 @@ import { CommonModule } from '@angular/common';
 
 // ** Custom **
 // ** Modules **
+import { FormsModule } from '@angular/forms';
 import { HerosRoutingModule } from './heros-routing.module';
 import { FlexLayoutModule } from "@angular/flex-layout";
 import { MaterialModule } from '../material/material.module';
@@ -32,6 +33,7 @@ import { ImagePipe } from './pipes/image.pipe';
   ],
   imports: [
     CommonModule,
+    FormsModule,
     HerosRoutingModule,
     FlexLayoutModule,
     MaterialModule
