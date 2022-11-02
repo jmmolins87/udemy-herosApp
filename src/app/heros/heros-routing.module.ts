@@ -23,7 +23,11 @@ const routes: Routes = [
         component: AddComponent
       },
       {
-        path: ':/id',
+        path: 'edit/:id',
+        component: AddComponent
+      },
+      {
+        path: 'hero/:id',
         component: HeroComponent
       },
       {
@@ -36,7 +40,7 @@ const routes: Routes = [
       },
       {
         path: '**',
-        redirectTo: 'home'
+        redirectTo: 'list'
       }
     ]
   }
