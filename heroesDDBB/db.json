@@ -166,6 +166,15 @@
       "alter_ego": "Norrin Radd",
       "first_appearance": "The Fantastic Four #48",
       "characters": "Norrin Radd"
+    },
+    {
+      "superhero": "Robin",
+      "alter_ego": "Juanma",
+      "characters": "robin",
+      "first_appearance": "primer comic",
+      "publisher": "DC Comics",
+      "alt_img": "https://cloudfront-eu-central-1.images.arcpublishing.com/larazon/EH6GVKL3JBFEZJOPBAEEVYOVHY.jpg",
+      "id": "i5qhLN1"
     }
   ]
 }

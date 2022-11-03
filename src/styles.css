@@ -23,8 +23,14 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
 .w-100 {
     width: 100% !important;
 }
+.w-75 {
+    width: 75% !important;
+}
 .br-5 {
     border-radius: 5px !important;
+}
+.fit-height {
+    height: fit-content !important;
 }
 
 

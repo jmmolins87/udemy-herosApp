@@ -26,4 +26,12 @@ export class HerosService {
   getSuggestions( term: string ): Observable<Hero[]>{
     return this.http.get<Hero[]>( `${ this.apiUrl }${ this.urlHeros }?q=${ term }&_limit=6` );
   }
+
+  addHero( hero: Hero ): Observable<Hero> {
+    return this.http.post<Hero>( `${ this.apiUrl }${ this.urlHeros }`, hero );
+  }
+
+  updateHero( hero: Hero ): Observable<Hero> {
+    return this.http.put<Hero>( `${ this.apiUrl }${ this.urlHeros }${ hero.id }`, hero );
+  }
 }
