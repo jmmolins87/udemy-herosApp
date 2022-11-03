@@ -18,6 +18,7 @@ import { CardHeroComponent } from './components/card-hero/card-hero.component';
 
 // ** Pipes **
 import { ImagePipe } from './pipes/image.pipe';
+import { ConfirmComponent } from './components/confirm/confirm.component';
 
 
 
@@ -29,7 +30,8 @@ import { ImagePipe } from './pipes/image.pipe';
     HomeComponent,
     ListComponent,
     CardHeroComponent,
-    ImagePipe
+    ImagePipe,
+    ConfirmComponent
   ],
   imports: [
     CommonModule,

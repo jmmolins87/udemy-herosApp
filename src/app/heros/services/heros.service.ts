@@ -34,4 +34,8 @@ export class HerosService {
   updateHero( hero: Hero ): Observable<Hero> {
     return this.http.put<Hero>( `${ this.apiUrl }${ this.urlHeros }${ hero.id }`, hero );
   }
+
+  deleteHero( id: string ): Observable<{}> {
+    return this.http.delete<any>( `${ this.apiUrl }${ this.urlHeros }${ id }` );
+  }
 }

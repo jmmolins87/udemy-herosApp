@@ -1,0 +1,19 @@
+<h3>¿Estás seguro?</h3>
+<hr>
+<p>Está seguro de borrar a {{ data.superhero }}</p>
+<p>¿Desea continuar?</p>
+
+<div fxLayout="row" fxLayoutAlign="space-between">
+    <button 
+        mat-raised-button 
+        (click)="remove()" 
+        color="warn">
+        Si, borrar!
+    </button>
+    <button 
+        mat-raised-button 
+        (click)="close()" 
+        color="accent">
+        Cancelar
+    </button>
+</div>

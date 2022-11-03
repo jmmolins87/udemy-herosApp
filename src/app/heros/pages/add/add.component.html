@@ -1,4 +1,6 @@
-<h2>Nuevo héroe: <small>{{ hero.superhero }}</small></h2>
+<h2>
+    {{ ( hero.id ) ? 'Editar' : 'Nuevo' }} héroe: 
+    <small>{{ hero.superhero }}</small></h2>
 <div 
     fxLayout="row" 
     fxLayout.lt-sm="column" 
@@ -8,6 +10,7 @@
         fxFlex="50" 
         fxFlex.lt-sm="100" 
         fxLayout="column"
+        fxFlexOrder.lt-sm="1"
         class="fit-height">
         <div 
             fxLayout="row" 
@@ -67,16 +70,34 @@
                 [(ngModel)]="hero.alt_img"
                 required>
         </mat-form-field>
-        <br>
-        <button 
-            (click)="save()"
-            mat-raised-button
-            color="warn">
-            <mat-icon>edit</mat-icon>
-            Guardar
-        </button>
+        <div 
+            fxLayout="row" 
+            fxLayout.lt-sm="column" 
+            fxLayoutAlign="space-between">
+            <button 
+                fxFlex="45"
+                (click)="save()"
+                mat-raised-button
+                color="accent"
+                ngClass.lt-sm="mt-20">
+                <mat-icon>edit</mat-icon>
+                {{ ( hero.id ) ? 'Actualizar' : 'Crear' }} 
+            </button>
+            <button
+                *ngIf="hero.id"
+                fxFlex="45"
+                (click)="remove()"
+                mat-raised-button
+                color="warn"
+                ngClass.lt-sm="mt-20">
+                <mat-icon>remove</mat-icon>
+                Borrar
+            </button>
+        </div>
     </div>
-    <div fxFlex="50">
+    <div 
+        fxFlex="50"
+        fxFlexOrder.lt-sm="2">
         <img 
             [src]="hero | image" 
             [alt]="hero.superhero"
