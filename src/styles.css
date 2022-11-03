@@ -18,7 +18,7 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
     cursor: pointer !important;
 }
 .spacer {
-    flex: 1 1 auto;
+    flex: 1 1 auto !important;
 }
 .w-100 {
     width: 100% !important;
@@ -34,5 +34,19 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
     padding: 0 !important;
 }
 .mat-list-base .mat-list-item .mat-list-item-content span {
-    margin-right: 10px;
+    margin-right: 10px !important;
+}
+.mat-grid-tile .mat-figure {
+    align-items: flex-start !important;
+}
+.mat-toolbar-row,
+.mat-toolbar-single-row {
+    position: sticky !important;
+    top: 0 !important;
+    z-index: 1 !important;
+    backdrop-filter: blur(54px) !important;
+    background: rgba(0, 0, 0, 0.7) !important;
+}
+.mat-grid-tile {
+    overflow: visible !important;
 }
